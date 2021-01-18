@@ -71,8 +71,8 @@ algorithme puisse être décrit dans ces langages, ainsi que pour que
 les programmes écrits dans ces langages ne puissent être interprétés
 que d'une unique manière. Ce dernier point est particulièrement
 important si l'on veut pouvoir certifier que l'exécution d'un
-programme se déroule de la manière attendue. Il serait pourtant peu
-souhaitable que les programmes responsables du déploiement  des
+programme se déroule de la manière attendue. Il serait en effet peu
+souhaitable que les programmes responsables du déploiement des
 airbags dans une voiture ne suivent pas le comportement attendu.
 
 ### Information et Données (\*: Adaptée)
@@ -119,7 +119,7 @@ Ce que nous avons fait pour construire cette activité a été d’écrire
 la représentation de chaque blason, puis de les trier en fonction de
 la longueur de la description: plus longue est la description, plus le
 blason doit être complexe. C'est cependant contestable, car certains
-des drapeaux de la feuille C auraient pu être placé sur la feuille B
+des blasons de la feuille C auraient pu être placé sur la feuille B
 avec un langage légèrement différent.
 
 Cela conduit à un question très profonde: quelle est la quantité
@@ -129,33 +129,36 @@ mais vous pouvez obtenir une première approximation sur votre
 ordinateur: il suffit de compresser ce fichier dans un .zip, et de
 mesurer la taille du fichier resultant.
 
-### Algorithme (.: inadapté)
+### Algorithme (.)
 
 Il y a assez peu de lien avec cette activité. On peut discuter de la
 différence entre algorithme et programme en terme de formalisme. Voir
 la section Langage pour plus de détails.
  
-### Machine (.: inadapté)
+### Machine (.)
 
 Il n'y a pas de lien avec cette activité.
  
 ## Compétences de la pensée informatique
 
-### Abstraction/Modélisation (\*\*)
-* C'est une activité de modélisation...
-	
-### Décomposition (\*)
-* Décomposition de certains motifs sur les blasons
+### Abstraction/Modélisation (\*)
+Lors de la description d'un blason, celui-ci doit être vu (c'est-à-dire modélisé) comme une suite d'instructions pour qu'il puisse être décrit efficacement. Ainsi, la suite d'instructions correspondant au blason s'abstrait de la forme précise de celui-ci. 
 
-### Generalisation et motifs (\*)
-* Quand on change de fiche, on généralise le langage
+### Décomposition (\*)
+Lors de la description d'un blason, celui-ci doit être décomposé en parties plus petites de telles manières que chacunes de ces parties puissent être facilement décrites. Typiquement, on découpe d'abord différentes parties du blason avant de décrire comment celles-ci sont remplies. La description d'un blason passe donc par la décomposition de celui-ci en parties plus petites et plus simples de telle manière que celles-ci puissent être décrites sans avoir besoin de les décomposer plus avant.
+
+### Généralisation et motifs (\*\*)
+Si les participants élaborent eux-même un langage de description de blasons, cela est fait à partir de leur expérience de la description de quelques blasons. Il faut alors repérer les motifs (qu'il soient géométriques ou au sein des descriptions de blasons) qui apparaissent pour pouvoir élaborer un langage. De plus, lorsqu'ils se rendent compte que le langage mis en place n'est plus suffisant pour décrire un blason en particulier, il faut pouvoir mettre en lumière la ou les partie(s) du blason qui ne peuvent être décrites. A partir de celle(s)-ci, si les participants veulent mettre à jour le langage pour qu'ils puissent décrire plusieurs nouveaux blasons, il faut trouver un ensemble de motifs qui ne peuvent pas être décrit par le langage. Ainsi, un problème observé sur un exemple doit pouvoir permettre de généraliser à un problème sur le langage lui-même.
 	
 ### Évaluation (\*)
-* différence original/dessiné
-* qualité du langage, 
-	
+Au cours de l'activité, les participants doivent, à partir de la description d'un blason, essayer de le reproduire. Une fois que cela est fait, il faut évaluer le résultat, c'est-à-dire estimer à quel point ce qui est dessiné est proche de ce qui a été décrit. Plusieurs méthodes d'évaluation peuvent être utilisées. Par exemple, on peut utiliser une simple évaluation binaire du type : "le dessin est identique" et "le dessin est différent". On peut également être plus nuancé en définissant la différence entre un dessin et le blason original par le nombre d'instructions nécessaires pour corriger le dessin. Enfin, on peut aussi regarder quelle est l'instruction qui n'a pas été comprise de la façon voulue.
+
+Lorsque l'on se rend compte que l'on n'arrive pas à décrire adéquatement un blason avec le langage que l'on s'est donné, si l'évaluation est simplement binaire, on ne peut pas se rendre compte de l'origine du problème (l'expressivité ou l'ambiguïté du langage utilisé, voir la section Langage). Une évaluation plus précise des différences entre un dessin et l'original permet alors une évaluation du langage de description lui-même, qui peut ensuite être modifié pour être plus adapté aux blasons suivants.
+
 ### Pensée algorithmique (.)
-* certains ordres d'instructions sont plus compréhensible
+Cette activité n'est pas centrée sur la notion d'algorithme, mais elle illustre tout de même le séquençage d'instructions nécessaire pour la description des blasons. Notamment, via la description des blasons passent par leur décomposition (que l'on peut vouloir)
+
+Typiquement, on découpe d'abord différentes parties du blason avant de décrire comment celles-ci sont remplies. Ainsi, la description d'un blason s'apparente à une suite d'instructions, et nécessite donc d'utiliser une pensée algorithmique. Il faut tout de même remarquer qu'un algorithme décrivant un blason donné est un peu particulier étant donné qu'il renvoie toujours la même chose. 
 	
 ### Logique (.)
 
